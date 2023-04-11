@@ -1,0 +1,85 @@
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul{
+    width: 70%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    /*border: 2px black solid;
+    border-top:none;*/
+    
+}
+
+ul li{
+    padding: 1% 1% 1% 4%;
+    background-color: rgb(255, 200, 150);
+    border-top: 2px black solid;
+    border-right: 2px black solid;
+    border-left: 2px black solid;
+    
+
+}
+
+ul li:last-child{
+    background-color: rgb(255, 200, 150);
+    border-top: 2px black solid;
+    border-right: 2px black solid;
+    border-left: 2px black solid;
+    border-bottom: 2px black solid ;
+    transition: all 0.2s;
+    
+
+}
+
+ul li:hover{
+    cursor: pointer;
+    background-color: rgb(255, 200,200);
+    font-size: 120%;
+    transform: scale(1.03,1);
+}
+
+ul.menu{
+    clear: both;
+    float: left;
+    width: 100%;
+    border: none;
+}
+
+ul.menu li{
+    float: left;
+    padding: 4px;
+    border-top: 2px black solid;
+    border-left: 2px black solid ;
+    border-bottom: 2px black solid ;
+    border-right: 2px black solid;
+}
+
+ul.menu li:last-child{
+    border-right: 2px black solid ;
+}
+
+
+
+@media screen and (max-width: 400px) {
+    ul.menu{
+        width: 200px;
+        float: none;
+        border-radius: 2px;
+    }
+    ul.menu li{
+        float: none;
+        border-radius: 2px;
+    }
+    ul.menu li:first-child{
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+    ul.menu li:last-child{
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+}
